@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Psychic Game</title>
+</head>
 
+<body>
+    
+    <!-- <div id="game">
+        <h1> The Psychic Game</h1>
+        <p>Guess what letter I'm think of</p>
+    </div> -->
+
+<!-- The computer has a set of 9 letters it randomly selects 
+The computer makes a choice
+The user needs to guess one of the letters
+User makes a choice
+computer capture those choices
+
+compare the choices, and determine a win or a loss
+computer alert user if win or loss
+if it is a loss then computer subtracts a possible answer
+computer states how many guess remain
+when it subtracts all possible answers starts again
+if its a win starts from the beginning -->
+
+    <script type="text/javascript">
+
+        var options = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+
+        document.onkeyup = function() {
+            var userguess = String.fromCharCode(event.keyCode).
+            toLowerCase();
+
+            console.log(userguess);
+
+            var computerGuess = options[Math.floor(Math.random()*options.length)];
+
+            console.log(computerGuess);
+
+        }
+
+
+        
+
+    
+
+
+    </script>
+</body>
+</html>
